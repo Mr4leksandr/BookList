@@ -115,8 +115,8 @@ function removeBookFromLocalStorage(bookItem){
 
 function clearBooks(){
     if(confirm('Are you sure about that')){
-        while(taskList.firstChild){
-            taskList.removeChild(taskList.firstChild);
+        while(bookList.firstChild){
+            bookList.removeChild(bookList.firstChild);
         } 
         localStorage.clear();
     }
